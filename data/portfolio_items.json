@@ -1,0 +1,17 @@
+[
+  {
+    "name": "My First HTML Page",
+    "description": "A simple page showing basic HTML structure.",
+    "link": "#"
+  },
+  {
+    "name": "CSS Styling Practice",
+    "description": "Used CSS to create layout and colors.",
+    "link": "#"
+  },
+  {
+    "name": "JavaScript Interactivity",
+    "description": "Added interactivity using JavaScript buttons.",
+    "link": "#"
+  }
+]
