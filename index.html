@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Dynamic Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/CmdkdQu.jpeg" alt="Your Name" id="profile-img"/>
+    <h1>Hello, I'm Adebimpe Fasheyi! Grace</h1>
+    <p>Passionate about web development and creating engaging experiences.</p>
+  </header>
 
+  <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a passionate developer learning HTML, CSS, and JavaScript.</p>
+      <p>I enjoy learning new technologies and building responsive web applications.</p>
     </section>
 
-    <section id="projects">
+    <section id="multimedia-showcase">
+      <h2>Multimedia Showcase</h2>
+      <h3>My Audio Greeting:</h3>
+      <audio controls>
+        <source src="media/my_intro_audio.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>A Quick Project Video:</h3>
+      <video controls width="320" height="240">
+        <source src="media/my_project_video.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="interactive-skills">
+      <h2>My Skills</h2>
+      <div class="skill-buttons">
+        <button class="skill-btn" data-skill="HTML">HTML</button>
+        <button class="skill-btn" data-skill="CSS">CSS</button>
+        <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+      </div>
+      <p id="skill-description">Click a skill to learn more!</p>
+    </section>
+
+    <section id="portfolio-list">
       <h2>My Projects</h2>
-      <div id="projectList"></div>
+      <div id="projects-container"></div>
     </section>
+  </main>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Adebimpe Grace" required />
-        <input type="email" placeholder="Adebmpe.Fasheyiug24@calebuniversity.edu.ng/" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+  <footer>
+    <p>&copy; <span id="current-year"></span> Adebimpe. All rights reserved.</p>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </footer>
 
-    <footer>
-      <p>© 2025 My Portfolio</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
